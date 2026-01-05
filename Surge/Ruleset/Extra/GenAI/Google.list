@@ -1,30 +1,51 @@
 # Google AI
 
-# > AI Studio / MakerSuite
-DOMAIN,generativeai.google
-DOMAIN,makersuite.google.com
-DOMAIN,aistudio.google.com
-DOMAIN,ai.google.dev
-DOMAIN,alkalicore-pa.clients6.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
+# > Entrypoints / Web Apps
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,jules.google.com
+DOMAIN,labs.google
+DOMAIN-SUFFIX,labs.google
+DOMAIN-SUFFIX,labs.google.com
 
 # > DeepMind
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 
-# > Gemini / GenAI APIs
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN,geller-pa.googleapis.com
-DOMAIN,proactivebackend-pa.googleapis.com
-DOMAIN,bard.google.com
-DOMAIN,gemini.google.com
-
 # > NotebookLM
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google.com
 
-# > Jules
-DOMAIN,jules.google.com
+# > Core APIs / Backends
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN,geller-pa.googleapis.com
+DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 
-# > Search Labs
+# > AI Studio telemetry / clients
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
+
+# > Keyword fallbacks
+DOMAIN-KEYWORD,generativeai.google
+DOMAIN-KEYWORD,aistudio.google
+DOMAIN-KEYWORD,makersuite.google
+DOMAIN-KEYWORD,gemini.google
+DOMAIN-KEYWORD,bard.google
+DOMAIN-KEYWORD,notebooklm
+DOMAIN-KEYWORD,deepmind
+DOMAIN-KEYWORD,generativelanguage
+DOMAIN-KEYWORD,geller-pa
+DOMAIN-KEYWORD,proactivebackend-pa
+DOMAIN-KEYWORD,alkalicore
+DOMAIN-KEYWORD,alkalimakersuite
 DOMAIN-KEYWORD,labs.google
+
