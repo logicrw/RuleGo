@@ -1,6 +1,6 @@
 # Google AI
 
-# > Entrypoints / Web Apps
+# Entrypoints / Web Apps
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,makersuite.google.com
@@ -9,43 +9,34 @@ DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,jules.google.com
 DOMAIN,labs.google
-DOMAIN-SUFFIX,labs.google
 DOMAIN-SUFFIX,labs.google.com
 
-# > DeepMind
+# DeepMind
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 
-# > NotebookLM
+# NotebookLM
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google.com
 
-# > Core APIs / Backends
-DOMAIN,generativelanguage.googleapis.com
+# Core APIs / Backends
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN,geller-pa.googleapis.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
-DOMAIN,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-
-# > AI Studio telemetry / clients
-DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
 
-# > Keyword fallbacks
-DOMAIN-KEYWORD,generativeai.google
-DOMAIN-KEYWORD,aistudio.google
-DOMAIN-KEYWORD,makersuite.google
-DOMAIN-KEYWORD,gemini.google
-DOMAIN-KEYWORD,bard.google
+# Keyword fallbacks
+DOMAIN-KEYWORD,gemini
+DOMAIN-KEYWORD,bard
 DOMAIN-KEYWORD,notebooklm
-DOMAIN-KEYWORD,deepmind
+DOMAIN-KEYWORD,generativeai
 DOMAIN-KEYWORD,generativelanguage
+DOMAIN-KEYWORD,makersuite
+DOMAIN-KEYWORD,aistudio
+DOMAIN-KEYWORD,deepmind
 DOMAIN-KEYWORD,geller-pa
-DOMAIN-KEYWORD,proactivebackend-pa
+DOMAIN-KEYWORD,proactivebackend
 DOMAIN-KEYWORD,alkalicore
 DOMAIN-KEYWORD,alkalimakersuite
 DOMAIN-KEYWORD,labs.google
-
