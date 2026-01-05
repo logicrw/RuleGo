@@ -40,3 +40,20 @@ DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
 # > OKX
 DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net
+
+# Added (crypto / news / tools)
+
+# > Crypto / AI / Data
+DOMAIN-SUFFIX,coinglasscdn.com
+DOMAIN-SUFFIX,cryptohunt.ai
+DOMAIN-SUFFIX,foresightnews.pro
+DOMAIN-SUFFIX,xxyy.io
+
+# > General services / apps
+DOMAIN-SUFFIX,buzzing.cc
+DOMAIN-SUFFIX,enjoy.bot
+DOMAIN-SUFFIX,futunn.com
+DOMAIN-SUFFIX,go.runba.cyou
+DOMAIN-SUFFIX,mypikpak.com
+DOMAIN-SUFFIX,signalplus.com
+DOMAIN-SUFFIX,yahoo.com
