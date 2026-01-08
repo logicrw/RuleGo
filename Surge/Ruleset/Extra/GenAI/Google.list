@@ -10,6 +10,7 @@ DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,jules.google.com
 DOMAIN,labs.google
 DOMAIN-SUFFIX,labs.google.com
+DOMAIN-SUFFIX,opal.google
 
 # DeepMind
 DOMAIN-SUFFIX,deepmind.com
