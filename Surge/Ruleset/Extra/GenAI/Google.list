@@ -14,12 +14,6 @@ DOMAIN-SUFFIX,withgoogle.com
 DOMAIN-SUFFIX,opal.google
 DOMAIN-SUFFIX,accounts.google.com
 
-
-DOMAIN-SUFFIX,pa.googleapis.com
-DOMAIN-SUFFIX,clients6.google.com
-
-
-
 # DeepMind
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
@@ -33,7 +27,9 @@ DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
-DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com  
+DOMAIN-SUFFIX,pa.googleapis.com
+DOMAIN-SUFFIX,clients6.google.com
 
 # Keyword fallbacks
 DOMAIN-KEYWORD,gemini
