@@ -15,6 +15,11 @@ DOMAIN-SUFFIX,opal.google
 DOMAIN-SUFFIX,accounts.google.com
 
 
+DOMAIN-SUFFIX,pa.googleapis.com
+DOMAIN-SUFFIX,clients6.google.com
+
+
+
 # DeepMind
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
