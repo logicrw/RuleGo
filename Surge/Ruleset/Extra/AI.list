@@ -51,8 +51,10 @@ DOMAIN-SUFFIX,grok.com
 # Groq
 DOMAIN-SUFFIX,groq.com
 
-# Meta AI
+# Meta AI / Muse (keep login and API traffic on the same policy)
 DOMAIN-SUFFIX,meta.ai
+DOMAIN,auth.meta.com
+DOMAIN,developer.meta.com
 DOMAIN,imagine.meta.com
 
 # Microsoft Copilot
