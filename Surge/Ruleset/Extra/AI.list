@@ -1,17 +1,10 @@
-# AI
+# ============================================================
+# AI.list — 全局海外通用 AI 规则集
+# 涵盖: OpenAI, Anthropic Claude, xAI Grok, Perplexity, Cursor, Copilot, HuggingFace, Trae 等
+# 维护仓库: logicrw/RuleGo (patch-1)
+# ============================================================
 
-# Apple Intelligence
-DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN,cp4.cloudflare.com
-DOMAIN,guzzoni.apple.com
-DOMAIN,gspe1-ssl.ls.apple.com
-DOMAIN-SUFFIX,apps.mzstatic.com
-
-# OpenAI / ChatGPT
+# ---------------- OpenAI / ChatGPT / Codex / Sora ----------------
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
@@ -27,83 +20,82 @@ DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
-# OpenAI wide fallback (more permissive, may overmatch)
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
 
-# Anthropic / Claude
+# ---------------- Anthropic Claude ----------------
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
-# Claude wide fallback
 DOMAIN-KEYWORD,claude
 
-# Perplexity
+# ---------------- Perplexity ----------------
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,pplx.ai
 DOMAIN,pplx-res.cloudinary.com
 
-# xAI / Grok
+# ---------------- xAI / Grok ----------------
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
 
-# Groq
-DOMAIN-SUFFIX,groq.com
-
-# Meta AI / Muse (keep login and API traffic on the same policy)
-DOMAIN-SUFFIX,meta.ai
-DOMAIN,auth.meta.com
-DOMAIN,developer.meta.com
-DOMAIN,imagine.meta.com
-
-# Microsoft Copilot
-DOMAIN,copilot.microsoft.com
-DOMAIN,sydney.bing.com
-DOMAIN,www.bing.com
-
-# GitHub Copilot
-DOMAIN-SUFFIX,githubcopilot.com
-
-# Cloudflare AI Gateway
-DOMAIN,gateway.ai.cloudflare.com
-
-# Cursor
+# ---------------- Cursor ----------------
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
 DOMAIN-SUFFIX,cursor-cdn.com
 
-# JetBrains AI
-DOMAIN-SUFFIX,grazie.ai
+# ---------------- GitHub Copilot ----------------
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,origin-tracker.githubusercontent.com
+DOMAIN,copilot-telemetry.githubusercontent.com
+DOMAIN,default.exp-tas.com
+DOMAIN,copilot-reports.github.com
 
-# POE
+# ---------------- Hugging Face Hub / CDN ----------------
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+
+# ---------------- Groq / OpenRouter / Dify / POE ----------------
+DOMAIN-SUFFIX,groq.com
+DOMAIN,openrouter.ai
 DOMAIN-SUFFIX,poe.com
-
-# Midjourney
-DOMAIN-SUFFIX,midjourney.com
-
-# Dify
 DOMAIN-SUFFIX,dify.ai
+DOMAIN-SUFFIX,genspark.ai
 
-# Jasper / Clipdrop
+# ---------------- Meta AI ----------------
+DOMAIN-SUFFIX,meta.ai
+DOMAIN,auth.meta.com
+DOMAIN,developer.meta.com
+DOMAIN,imagine.meta.com
+
+# ---------------- Microsoft Copilot ----------------
+DOMAIN,copilot.microsoft.com
+DOMAIN,sydney.bing.com
+
+# ---------------- Cloudflare AI / JetBrains AI ----------------
+DOMAIN,gateway.ai.cloudflare.com
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN,api.jetbrains.ai
+
+# ---------------- Image & Creative AI (Midjourney / Clipdrop / OpenArt / Jasper) ----------------
+DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,jasper.ai
 DOMAIN-SUFFIX,clipdrop.co
-
-# OpenArt
 DOMAIN-SUFFIX,openart.ai
 
-# Doubao (keep extended-matching)
-DOMAIN-SUFFIX,cici.com,extended-matching
-DOMAIN-SUFFIX,ciciai.com,extended-matching
-DOMAIN-SUFFIX,dola.com,extended-matching
-DOMAIN-SUFFIX,byteoversea.com,extended-matching
-
-# Added
-DOMAIN,open-ai-chat-omega.vercel.app
-DOMAIN-SUFFIX,yourware.so
-DOMAIN-SUFFIX,genspark.ai
+# ---------------- Developer AI & Browser (Trae / MarsCode / Dia) ----------------
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,marscode.com
+DOMAIN,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,diabrowser.engineering
 DOMAIN-SUFFIX,diabrowser.com
 DOMAIN,app.hume.ai
 DOMAIN-SUFFIX,apodex.ai
+
+# ---------------- ByteDance Overseas AI (Cici / Dola) ----------------
+DOMAIN-SUFFIX,cici.com
+DOMAIN-SUFFIX,ciciai.com
+DOMAIN-SUFFIX,dola.com
+DOMAIN-SUFFIX,byteoversea.com

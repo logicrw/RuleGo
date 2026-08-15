@@ -1,0 +1,275 @@
+# ============================================================
+# ChinaFast.list — 国内 VIP 极速特快直连通道 (1个文件顶全部)
+# 涵盖：微信/腾讯全系、国内六小龙大模型、开源镜像站、云办公协作、主流网盘、云厂商
+# 维护仓库: logicrw/RuleGo (patch-1)
+# ============================================================
+
+# ---------------- 微信与腾讯全系生态 (WeChat / 微信支付 / 小程序 / 海外中继) ----------------
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,wx.qq.com
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,wechatpay.cn
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,work.weixin.qq.com
+DOMAIN-SUFFIX,wecom.work
+DOMAIN-SUFFIX,weixinbridge.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,gtimg.cn
+DOMAIN-SUFFIX,gtimg.com
+IP-CIDR,43.156.222.113/32,no-resolve
+IP-CIDR,43.156.222.152/32,no-resolve
+IP-CIDR,43.156.222.176/32,no-resolve
+IP-CIDR,43.156.222.205/32,no-resolve
+IP-CIDR,43.156.223.202/32,no-resolve
+IP-CIDR,43.156.255.184/32,no-resolve
+IP-CIDR,101.32.104.4/32,no-resolve
+IP-CIDR,101.32.104.41/32,no-resolve
+IP-CIDR,101.32.104.56/32,no-resolve
+IP-CIDR,101.32.104.104/32,no-resolve
+IP-CIDR,101.32.118.25/32,no-resolve
+IP-CIDR,101.32.133.16/32,no-resolve
+IP-CIDR,101.32.133.53/32,no-resolve
+IP-CIDR,101.32.133.209/32,no-resolve
+IP-CIDR,129.226.3.47/32,no-resolve
+IP-CIDR,129.226.107.59/32,no-resolve
+IP-CIDR,129.226.107.244/32,no-resolve
+
+# ---------------- 国内开源镜像站加速 (NPM / PyPI / Docker / Linux) ----------------
+DOMAIN-SUFFIX,tuna.tsinghua.edu.cn
+DOMAIN-SUFFIX,ustc.edu.cn
+DOMAIN-SUFFIX,sjtu.edu.cn
+DOMAIN-SUFFIX,zju.edu.cn
+DOMAIN-SUFFIX,bfsu.edu.cn
+DOMAIN-SUFFIX,npmmirror.com
+DOMAIN-SUFFIX,doubanio.com
+
+# ---------------- 国内新锐 AI 搜索与大模型社区 ----------------
+DOMAIN-SUFFIX,metaso.cn
+DOMAIN-SUFFIX,modelscope.cn
+DOMAIN-SUFFIX,yuanbao.tencent.com
+DOMAIN-SUFFIX,hunyuan.tencent.com
+DOMAIN-SUFFIX,paddlepaddle.org.cn
+DOMAIN-SUFFIX,wisemodel.cn
+DOMAIN-SUFFIX,opencsg.com
+
+# ---------------- 国内高频云办公与协同设计 ----------------
+DOMAIN-SUFFIX,feishu.cn
+DOMAIN-SUFFIX,feishu.net
+DOMAIN-SUFFIX,larkoffice.com
+DOMAIN-SUFFIX,feishucdn.com
+DOMAIN-SUFFIX,dingtalk.com
+DOMAIN-SUFFIX,dingtalkapps.com
+DOMAIN-SUFFIX,meeting.tencent.com
+DOMAIN-SUFFIX,docs.qq.com
+DOMAIN-SUFFIX,yuque.com
+DOMAIN-SUFFIX,yuque.antfin.com
+DOMAIN-SUFFIX,wps.cn
+DOMAIN-SUFFIX,kdocs.cn
+DOMAIN-SUFFIX,wpscdn.cn
+DOMAIN-SUFFIX,lanhuapp.com
+DOMAIN-SUFFIX,js.design
+DOMAIN-SUFFIX,mastergo.com
+
+# ---------------- 国内主流网盘与大文件传输 ----------------
+DOMAIN-SUFFIX,aliyundrive.com
+DOMAIN-SUFFIX,alipan.com
+DOMAIN-SUFFIX,baidupcs.com
+DOMAIN-SUFFIX,pan.baidu.com
+DOMAIN-SUFFIX,quark.cn
+DOMAIN-SUFFIX,myquark.cn
+DOMAIN-SUFFIX,115.com
+DOMAIN-SUFFIX,115cdn.net
+DOMAIN-SUFFIX,wenshushu.cn
+DOMAIN-SUFFIX,cowtransfer.com
+
+# ---------------- 核心生活与支付金融 ----------------
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,360buy.com
+DOMAIN-SUFFIX,jdcache.com
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,dianping.com
+DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,unionpay.com
+
+# ---------------- 深度求索 (DeepSeek) ----------------
+DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,deepseek.cn
+
+# ---------------- 智谱 AI (Zhipu AI / ChatGLM / BigModel) ----------------
+DOMAIN-SUFFIX,zhipuai.cn
+DOMAIN-SUFFIX,bigmodel.cn
+DOMAIN-SUFFIX,chatglm.cn
+DOMAIN-SUFFIX,codegeex.cn
+DOMAIN-SUFFIX,codegeex.com
+DOMAIN-SUFFIX,cogview.cn
+DOMAIN-SUFFIX,aminer.cn
+DOMAIN-SUFFIX,aminer.org
+
+# ---------------- MiniMax (名之梦 / 海螺 AI) ----------------
+DOMAIN-SUFFIX,minimax.chat
+DOMAIN-SUFFIX,minimaxi.com
+DOMAIN-SUFFIX,hailuoai.com
+DOMAIN-SUFFIX,hailuoai.video
+DOMAIN-SUFFIX,minimax.io
+
+# ---------------- 阶跃星辰 (StepFun / 跃问) ----------------
+DOMAIN-SUFFIX,stepfun.com
+DOMAIN-SUFFIX,stepfun.cn
+DOMAIN-SUFFIX,yuewen.cn
+DOMAIN-SUFFIX,stepchat.cn
+DOMAIN-SUFFIX,stepvideo.cn
+
+# ---------------- 月之暗面 (Moonshot AI / Kimi) ----------------
+DOMAIN-SUFFIX,moonshot.cn
+DOMAIN-SUFFIX,kimi.ai
+DOMAIN-SUFFIX,kimi.com
+DOMAIN-SUFFIX,moonshot.ai
+
+# ---------------- 零一万物 (01.AI / 万知) ----------------
+DOMAIN-SUFFIX,01.ai
+DOMAIN-SUFFIX,01wanwu.com
+DOMAIN-SUFFIX,lingyiwanwu.com
+DOMAIN-SUFFIX,wanzhi.com
+
+# ---------------- 百川智能 (Baichuan AI) ----------------
+DOMAIN-SUFFIX,baichuan-ai.com
+DOMAIN-SUFFIX,baichuan-ai.cn
+DOMAIN-SUFFIX,baichuan.ai
+
+# ---------------- 硅基流动 (SiliconFlow / 硅基云) ----------------
+DOMAIN-SUFFIX,siliconflow.cn
+DOMAIN-SUFFIX,siliconflow.com
+DOMAIN-SUFFIX,siliconcloud.cn
+
+# ---------------- 无问芯穹 (Infinigence / 天玑) ----------------
+DOMAIN-SUFFIX,infinigence.com
+DOMAIN-SUFFIX,infinigence.cn
+DOMAIN-SUFFIX,infmonkeys.com
+
+# ---------------- 面壁智能 (ModelBest / MiniCPM) ----------------
+DOMAIN-SUFFIX,modelbest.cn
+DOMAIN-SUFFIX,modelbest.com
+DOMAIN-SUFFIX,minicpm.com
+
+# ---------------- 生数科技 (Vidu AI) ----------------
+DOMAIN-SUFFIX,shengshu-ai.com
+DOMAIN-SUFFIX,vidu.studio
+
+# ---------------- 快手可灵 (Kling AI) ----------------
+DOMAIN-SUFFIX,klingai.com
+DOMAIN-SUFFIX,klingai.cn
+DOMAIN-SUFFIX,kuaishou.com
+DOMAIN-SUFFIX,kuaishouzt.com
+
+# ---------------- 商汤科技 (SenseTime / 日日新) ----------------
+DOMAIN-SUFFIX,sensetime.com
+DOMAIN-SUFFIX,sensenova.cn
+DOMAIN-SUFFIX,sensechat.cn
+
+# ---------------- 科大讯飞 (iFlytek / 讯飞星火) ----------------
+DOMAIN-SUFFIX,xfyun.cn
+DOMAIN-SUFFIX,iflytek.com
+DOMAIN-SUFFIX,sparkdesk.cn
+DOMAIN-SUFFIX,xf-yun.com
+
+# ---------------- 天工 AI / 昆仑万维 (Skywork AI) ----------------
+DOMAIN-SUFFIX,tiangong.cn
+DOMAIN-SUFFIX,skywork.cn
+DOMAIN-SUFFIX,kunlun.com
+
+# ---------------- 小米 AI (MiLM / MiMo / 小爱同学) ----------------
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,xiaomi.cn
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,miui.com
+DOMAIN-SUFFIX,xiaomiev.com
+
+# ---------------- 字节跳动 / 火山引擎全系 ----------------
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,volcengine.com
+DOMAIN-SUFFIX,volccdn.com
+DOMAIN-SUFFIX,volceapplog.com
+DOMAIN-SUFFIX,byteark.com
+DOMAIN-SUFFIX,bytetos.com
+DOMAIN-SUFFIX,toscdn.com
+DOMAIN-SUFFIX,volcvideo.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,bytedance.net
+DOMAIN-SUFFIX,bytedns.net
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,douyin.com
+
+# ---------------- 阿里云 ----------------
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,alibabadns.com
+DOMAIN-SUFFIX,alidns.com
+DOMAIN-SUFFIX,aliyuncdn.com
+DOMAIN-SUFFIX,aliyuncdn.net
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,cn-beijing.aliyuncs.com
+DOMAIN-SUFFIX,cn-chengdu.aliyuncs.com
+DOMAIN-SUFFIX,cn-guangzhou.aliyuncs.com
+DOMAIN-SUFFIX,cn-hangzhou.aliyuncs.com
+DOMAIN-SUFFIX,cn-shanghai.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-beijing.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-chengdu.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-guangzhou.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-hangzhou.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-heyuan.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-huhehaote.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-nanjing.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-qingdao.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-shanghai.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-shenzhen.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-wulanchabu.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-zhangjiakou.aliyuncs.com
+DOMAIN,registry.aliyuncs.com
+DOMAIN,hotfix-api.aliyuncs.com
+
+# ---------------- 腾讯云 ----------------
+DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,qcloudcdn.com
+DOMAIN-SUFFIX,tencent-cloud.cn
+DOMAIN-SUFFIX,tencent-cloud.com
+DOMAIN-SUFFIX,tencentcloudapi.com
+DOMAIN-SUFFIX,tencentcs.cn
+DOMAIN,cdnstatic.tencentcs.com
+
+# ---------------- 华为云 ----------------
+DOMAIN-SUFFIX,huaweicloud.cn
+DOMAIN-SUFFIX,huaweicloud.com
+DOMAIN-SUFFIX,huaweicloudapis.cn
+DOMAIN-SUFFIX,huaweicloudapis.com
+DOMAIN-SUFFIX,huaweiyun.cn
+DOMAIN-SUFFIX,huaweiyun.com
+DOMAIN-SUFFIX,hwclouds.cn
+DOMAIN-SUFFIX,hwclouds.com
+
+# ---------------- 百度 AI 云 / 文心一言 ----------------
+DOMAIN-SUFFIX,baidubce.com
+DOMAIN-SUFFIX,baidubcr.com
+DOMAIN-SUFFIX,bcebos.com
+DOMAIN-SUFFIX,bcelive.com
+DOMAIN-SUFFIX,bdydns.com
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,yiyan.baidu.com
+DOMAIN-SUFFIX,wenxin.baidu.com
+
+# ---------------- 国内开发者社区与开源平台 ----------------
+DOMAIN-SUFFIX,gitee.com
+DOMAIN-SUFFIX,gitee.io
+DOMAIN-SUFFIX,gitcode.com
+DOMAIN-SUFFIX,gitcode.net
+DOMAIN-SUFFIX,csdn.net
+DOMAIN-SUFFIX,juejin.cn
+DOMAIN-SUFFIX,oschina.net
+DOMAIN-SUFFIX,segmentfault.com
