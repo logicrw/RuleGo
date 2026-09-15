@@ -1,0 +1,30 @@
+# NAME: AppleDirect
+# AUTHOR: logicrw
+# REPO: https://github.com/logicrw/RuleGo
+# DESCRIPTION: Apple High-speed CDN & download direct rules (App Store, OS Updates, Apple Music)
+
+# > Apple Music CDN
+DOMAIN,aod.itunes.apple.com
+DOMAIN,streamingaudio.itunes.apple.com
+
+# > Apple Store Online & Store Assets
+DOMAIN-SUFFIX,store.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+
+# > App Store Downloads
+DOMAIN,iosapps.itunes.apple.com
+DOMAIN,osxapps.itunes.apple.com
+PROCESS-NAME,storedownloadd
+USER-AGENT,com.apple.appstored*
+
+# > OS Software Updates & Recovery
+DOMAIN,swcdn.apple.com
+DOMAIN,updates.cdn-apple.com
+DOMAIN,updates-http.cdn-apple.com
+DOMAIN,appldnld.apple.com
+DOMAIN,supportdownload.apple.com
+DOMAIN,apptrailers.itunes.apple.com
+
+# > China Local Map Services (Safe cn-ssl only, no gspe1-ssl country code check)
+DOMAIN,gspe19-cn-ssl.ls.apple.com
+PROCESS-NAME,com.apple.geod
