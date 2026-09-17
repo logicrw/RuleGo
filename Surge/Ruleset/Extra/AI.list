@@ -107,6 +107,9 @@ DOMAIN-SUFFIX,diabrowser.com
 DOMAIN,app.hume.ai
 DOMAIN-SUFFIX,apodex.ai
 
+# ---------------- TypeSafe AI (Jev / System One) ----------------
+DOMAIN-SUFFIX,typesafe.ai
+
 # ---------------- ByteDance Overseas AI (Cici / Dola) ----------------
 DOMAIN-SUFFIX,cici.com
 DOMAIN-SUFFIX,ciciai.com
