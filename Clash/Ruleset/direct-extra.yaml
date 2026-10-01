@@ -1,0 +1,6 @@
+# 自定义直连规则
+# 在这里添加你需要直连的域名
+payload:
+  # 示例：
+  # - DOMAIN-SUFFIX,example.com
+  # - DOMAIN,specific.example.com

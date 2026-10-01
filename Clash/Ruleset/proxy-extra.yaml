@@ -1,0 +1,6 @@
+# 自定义代理规则（你可以在这里添加需要代理的域名）
+payload:
+  # 示例：添加你需要代理的域名
+  # - DOMAIN-SUFFIX,example.com
+  # - DOMAIN,specific.example.com
+  # - DOMAIN-KEYWORD,keyword
