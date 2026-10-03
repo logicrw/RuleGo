@@ -273,3 +273,8 @@ DOMAIN-SUFFIX,csdn.net
 DOMAIN-SUFFIX,juejin.cn
 DOMAIN-SUFFIX,oschina.net
 DOMAIN-SUFFIX,segmentfault.com
+
+# ---------------- 科技与 Web3 媒体直连 ----------------
+DOMAIN-SUFFIX,theblockbeats.info
+DOMAIN-SUFFIX,blockbeats.info
+DOMAIN-SUFFIX,blockbeats.cn
