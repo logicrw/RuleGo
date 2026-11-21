@@ -21,6 +21,9 @@ DOMAIN-SUFFIX,opal.google
 DOMAIN,antigravity.google
 DOMAIN,antigravity-unleash.goog
 DOMAIN,daily-cloudcode-pa.googleapis.com
+DOMAIN,autopush-cloudcode-pa.googleapis.com
+DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
+DOMAIN,autopush-cloudcode-pa.sandbox.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,aida.googleapis.com
 DOMAIN,aisandbox-pa.googleapis.com
