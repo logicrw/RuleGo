@@ -3,7 +3,7 @@
 Convert Surge / Clash classical rules to domain/ipcidr format for Clash/Mihomo.
 
 Sources:
-  - Local RuleGo Surge rules: AI, Gemini, Crypto rulesets (Surge list format)
+  - Local RuleGo Surge rules: AI, Gemini, Crypto, Telemetry rulesets (Surge list format)
   - blackmatrix7/ios_rule_script: per-service rulesets (classical format)
 
 Output (in Clash/Ruleset/):
@@ -42,9 +42,10 @@ BM7_SERVICES = {
 
 RULEGO_REMOTE = "https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset"
 RULEGO_SERVICES = {
-    "ai-extra": "Extra/AI.list",
-    "gemini":   "Extra/GenAI/Google.list",
-    "crypto":   "Extra/Crypto.list",
+    "ai-extra":  "Extra/AI.list",
+    "gemini":    "Extra/GenAI/Google.list",
+    "crypto":    "Extra/Crypto.list",
+    "telemetry": "Extra/Reject/Telemetry.list",
 }
 
 

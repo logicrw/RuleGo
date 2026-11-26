@@ -1,0 +1,125 @@
+# ============================================================
+# Telemetry.list — 通用跨端 SDK 遥测、埋点、会话回放与崩溃上报拦截规则集
+# 维护仓库: logicrw/RuleGo (patch-1)
+# 适用端: Surge / Loon / Clash / Mihomo (仅含标准 DOMAIN / DOMAIN-SUFFIX)
+#
+# 设计原则 (SDK-Family Organized, Zero False Positives):
+#   1. 仅拦截纯商业遥测、分析埋点、RUM、会话回放与崩溃上报摄入端点，按 SDK 家族组织。
+#   2. 严格保留各平台官网、控制台、登录、文档、支付、许可证、推送与核心业务 API。
+#   3. 明确排除 (DO NOT ADD):
+#      - Sentry (sentry.io) & Datadog (datadoghq.com / browser-intake-*datadoghq*):
+#        由 OpenAI / Anthropic 专属分流规则接管，并保留开发者观测控制台。
+#      - firebaseinstallations.googleapis.com / firebaseremoteconfig.googleapis.com:
+#        与 FCM 推送及 Firebase Auth 共用，仅应在客户端用 PROCESS-NAME 按进程隔离。
+#      - statsigapi.net / api.statsig.com / sdk.launchdarkly.com / stream.launchdarkly.com:
+#        功能开关初始化/下发端点，仅拦截 events.* 纯事件上报端点。
+#      - scarf.sh / *.gateway.scarf.sh:
+#        开源软件包与镜像下载重定向网关，仅拦截 static.scarf.sh 追踪像素。
+#      - mcs.snssdk.com:
+#        字节系客户端初始化与播放器握手端点，拦截可能导致登录或播放异常。
+#      - sdk.*.braze.{com,eu} / utoken.umeng.com / app.adjust.{com,net.in,world}:
+#        涉及推送令牌注册、应用内消息卡片或通用链接/短链跳转，非纯被动遥测。
+# ============================================================
+
+# ---------------- Google & Firebase Telemetry / Analytics / Crashlytics ----------------
+DOMAIN-SUFFIX,app-analytics-services.com
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,clientmetrics-pa.googleapis.com
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
+DOMAIN-SUFFIX,doubleclickbygoogle.com
+DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
+DOMAIN-SUFFIX,firebaselogging.googleapis.com
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,metrics.gstatic.com
+DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
+DOMAIN-SUFFIX,play-analytics.com
+DOMAIN-SUFFIX,play.googleapis.com
+DOMAIN-SUFFIX,sctauditing-pa.googleapis.com
+DOMAIN-SUFFIX,telemetry.googleapis.com
+
+# ---------------- Product Analytics: Mixpanel (Ingest & SDK CDN) ----------------
+DOMAIN,api-eu.mixpanel.com
+DOMAIN,api-in.mixpanel.com
+DOMAIN,api-js.mixpanel.com
+DOMAIN,api.mixpanel.com
+DOMAIN,cdn.mxpnl.com
+DOMAIN,decide.mixpanel.com
+DOMAIN,switchboard.mixpanel.com
+
+# ---------------- Product Analytics: Amplitude (Ingest & SDK CDN) ----------------
+DOMAIN,api-sr.amplitude.com
+DOMAIN,api.amplitude.com
+DOMAIN,api.eu.amplitude.com
+DOMAIN,api2.amplitude.com
+DOMAIN,cdn.amplitude.com
+DOMAIN,regionconfig.amplitude.com
+
+# ---------------- Product Analytics: PostHog (Ingest & SDK Assets) ----------------
+DOMAIN,eu-assets.i.posthog.com
+DOMAIN,eu.i.posthog.com
+DOMAIN,us-assets.i.posthog.com
+DOMAIN,us.i.posthog.com
+
+# ---------------- Product Analytics: Segment (Tracking API & SDK CDN) ----------------
+DOMAIN,api.segment.io
+DOMAIN,cdn.segment.com
+DOMAIN,events.eu1.segmentapis.com
+
+# ---------------- Product Analytics: Heap (SDK Collector; preserves heap.io) ----------------
+DOMAIN-SUFFIX,heapanalytics.com
+
+# ---------------- Indie / Developer CLI Telemetry (Axiom / Aptabase / Scarf Pixel / T3 / TelemetryDeck) ----------------
+DOMAIN,api.axiom.co
+DOMAIN,eu.aptabase.com
+DOMAIN,ingest.t3.codes
+DOMAIN,nom.telemetrydeck.com
+DOMAIN,static.scarf.sh
+DOMAIN,us.aptabase.com
+
+# ---------------- Crash Reporting & Error / APM Ingestion (Bugsnag / Raygun / Rollbar) ----------------
+DOMAIN,api.raygun.com
+DOMAIN,api.rollbar.com
+DOMAIN,notify.bugsnag.com
+DOMAIN-SUFFIX,otlp.bugsnag.com
+DOMAIN,sessions.bugsnag.com
+
+# ---------------- Session Replay & Feature-Flag Event-Only Ingestion ----------------
+DOMAIN-SUFFIX,clarity.ms
+DOMAIN,events.launchdarkly.com
+DOMAIN,events.statsigapi.net
+DOMAIN,rs.fullstory.com
+
+# ---------------- Mobile Attribution & Legacy Analytics SDKs (Adjust / AppsFlyer / Flurry) ----------------
+# > Preserves app.adjust.{com,net.in,world} smart-link redirects & appsflyer.com / *.onelink.me
+DOMAIN-SUFFIX,adjust.io
+DOMAIN,analytics.adjust.com
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN,data.flurry.com
+
+# ---------------- Domestic Cloud RUM, Crash & AppLog SDKs ----------------
+# > Alibaba Cloud ARMS RUM (preserves functional aliyuncs.com APIs & alicdn.com CDN)
+DOMAIN,arms-retcode.aliyuncs.com
+DOMAIN,retcode.alicdn.com
+# > Tencent Bugly (preserves bugly.qq.com console & qq.com core services)
+DOMAIN,android.bugly.qq.com
+DOMAIN,ios.bugly.qq.com
+DOMAIN,rqd.uu.qq.com
+# > Umeng+ (preserves developer.umeng.com, utoken.umeng.com U-Push & non-log umsns.com U-Share)
+DOMAIN,alog.umeng.com
+DOMAIN,alogs.umeng.com
+DOMAIN,errlog.umeng.com
+DOMAIN,log.umsns.com
+DOMAIN,plbslog.umeng.com
+DOMAIN,stats.umsns.com
+DOMAIN,ulogs.umeng.com
+DOMAIN-SUFFIX,umengcloud.com
+# > ByteDance AppLog / DataRangers (excludes mcs.snssdk.com)
+DOMAIN,log.snssdk.com
+DOMAIN,mon.snssdk.com
+DOMAIN,tobapplog.ctobsnssdk.com
+DOMAIN,toblog.ctobsnssdk.com

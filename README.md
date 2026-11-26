@@ -10,6 +10,7 @@
   - `Surge/Ruleset/Extra/AI.list`：海外主流 AI 规则集（OpenAI, Claude, Cursor, Grok 等）
   - `Surge/Ruleset/Extra/Crypto.list`：加密货币与 Web3 资讯规则集
   - `Surge/Ruleset/Extra/GenAI/Google.list`：Google Gemini 规则集
+  - `Surge/Ruleset/Extra/Reject/Telemetry.list`：跨端 SDK 遥测、埋点、会话回放与崩溃上报拦截规则集
 - **[Clash / Mihomo](Clash/)**：Clash Verge Rev / Mihomo 配置文件模板、预转 YAML 规则及转换脚本
 - **[Quantumult](Quantumult/)**：Quantumult 配置与脚本
 - **[Shadow](Shadow/)**：Shadowrocket 配置

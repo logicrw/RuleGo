@@ -13,6 +13,7 @@ Clash/
 │   ├── ai-extra.yaml    # OpenAI, Claude, Grok, Cursor 等海外 AI 服务
 │   ├── gemini.yaml      # Google Gemini 规则
 │   ├── crypto.yaml      # 币安, OKX, Bybit 等加密货币及 Web3 资讯
+│   ├── telemetry.yaml   # 跨端 SDK 遥测与崩溃上报拦截规则
 │   ├── proxy-extra.yaml # 自定义代理扩展
 │   ├── direct-extra.yaml# 自定义直连扩展
 │   └── ...              # blackmatrix7 常用流媒体与常用服务规则
@@ -37,6 +38,7 @@ RuleGo 是统一的规则源头（SSOT）：
 - **AI 规则**：`Surge/Ruleset/Extra/AI.list`
 - **Gemini 规则**：`Surge/Ruleset/Extra/GenAI/Google.list`
 - **Crypto 规则**：`Surge/Ruleset/Extra/Crypto.list`
+- **Telemetry 规则**：`Surge/Ruleset/Extra/Reject/Telemetry.list`
 
 ### 现代 Clash Meta / Mihomo 用户：
 可以直接使用 `behavior: classical` + `format: text` 原生引用 `Surge/Ruleset/` 下的 `.list` 文件，无需任何转换。
