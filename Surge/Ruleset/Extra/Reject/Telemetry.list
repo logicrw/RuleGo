@@ -102,9 +102,11 @@ DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN,data.flurry.com
 
 # ---------------- Domestic Cloud RUM, Crash & AppLog SDKs ----------------
-# > Alibaba Cloud ARMS RUM (preserves functional aliyuncs.com APIs & alicdn.com CDN)
+# > Alibaba Cloud ARMS RUM v1/v2 & SLS telemetry ingest (preserves functional aliyuncs.com APIs & alicdn.com CDN)
 DOMAIN,arms-retcode.aliyuncs.com
+DOMAIN-SUFFIX,log.aliyuncs.com
 DOMAIN,retcode.alicdn.com
+DOMAIN-SUFFIX,rum.aliyuncs.com
 # > Tencent Bugly (preserves bugly.qq.com console & qq.com core services)
 DOMAIN,android.bugly.qq.com
 DOMAIN,ios.bugly.qq.com
